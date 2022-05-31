@@ -13,7 +13,6 @@ def index(request):
 
 
 def detail(request, question_id):
-    print("ASD")
     question = get_object_or_404(Question, pk=question_id)
     # try:
     #     q = Question.objects.get(pk=question_id)
