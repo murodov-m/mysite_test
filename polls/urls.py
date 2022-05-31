@@ -6,7 +6,7 @@ urlpatterns =[
     path('test', views.test, name='TEST'),
 
     # ex: polls/5/
-    path('<int:question_id>', views.detail, name='detail'),
+    path('<int:question_id>/', views.detail, name='detail'),
 
     # ex: polls/5/results
     path('<int:question_id>/results/', views.results, name='results'),
